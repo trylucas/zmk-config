@@ -1,138 +1,136 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x5_3}
 layers:
-  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, ESCAPE, LEFT CONTROL, A, S, D, F, G, H, J, K, L, ;, '''', LEFT SHIFT, Z, X, C, V, B, N, M, ',', ., /, RIGHT ALT, LGUI,
-    raise, ENTER, SPACE, BACKSPACE, lower]
+  default: [TAB, Q, W, E, R, T, Y, U, I, O, ;, ESCAPE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, P, '''', LEFT CONTROL, Z, X, C, V, B, N, M, ',', ., /, ENTER, LEFT ALT,
+    raise, BACKSPACE, SPACE, nav, LEFT GUI]
   raise:
-  - {t: ▽, type: trans}
+  - CAPSLOCK
   - '!'
   - '@'
   - '#'
   - $
   - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - \
-  - RIGHT ALT
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '-'
-  - '='
-  - '`'
-  - '['
-  - ']'
-  - '|'
-  - {t: ▽, type: trans}
-  - '6'
+  - KP MULTIPLY
   - '7'
   - '8'
   - '9'
-  - '0'
-  - _
-  - +
+  - KP DIVIDE
+  - \
+  - LSHFT
+  - ^
+  - '&'
+  - (
+  - )
   - '~'
-  - '{'
-  - '}'
-  - third
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - '='
+  - LCTRL
+  - <
+  - '>'
+  - '['
+  - ']'
+  - '='
+  - _
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - ENTER
   - {t: ▽, type: trans}
   - {type: held}
+  - BSPC
+  - SPACE
+  - DELETE
+  - '0'
+  nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  lower:
   - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - MUTE
+  - LSHFT
   - PREVIOUS
   - NEXT
   - VOLUME DOWN
   - VOLUME UP
   - PLAY PAUSE
+  - HOME
   - LEFT
   - DOWN
-  - UP
   - RIGHT
+  - PG UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - PG DN
+  - default
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - third
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   third:
-  - TAB
-  - Sft+ Q
-  - Sft+ W
-  - Sft+ E
-  - Sft+ R
-  - Sft+ T
-  - Sft+ Y
-  - Sft+ U
-  - Sft+ I
-  - Sft+ O
-  - Sft+ P
-  - ''
-  - {t: ESCAPE, h: LEFT CONTROL}
-  - Sft+ A
-  - Sft+ S
-  - Sft+ D
-  - Sft+ F
-  - Sft+ G
-  - Sft+ H
-  - Sft+ J
-  - Sft+ K
-  - Sft+ L
-  - 'Sft+ :'
-  - Sft+ "
-  - ''
-  - Sft+ Z
-  - Sft+ X
-  - Sft+ C
-  - Sft+ V
-  - Sft+ B
-  - Sft+ N
-  - Sft+ M
-  - Sft+ <
-  - Sft+ >
-  - Sft+ ?
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - KP MULTIPLY
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - ESC
+  - LSHFT
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - '='
+  - LCTRL
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Sft+ _
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - RET
+  - {t: default, h: toggle}
+  - SPACE
+  - LCTRL
+  - BSPC
+  - DEL
+  - '0'
 combos:
-- p: [12, 27]
-  k: ESCAPE
-- p: [41, 35]
-  k: RIGHT SHIFT
+- p: [37, 40]
+  k: {t: third, h: toggle}
